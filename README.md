@@ -2,4 +2,4 @@
 
 Github repo for CS297/298 research
 
-deli - 
+del1 - Tensorflow implementation of Drawing Classification
