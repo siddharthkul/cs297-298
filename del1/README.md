@@ -1,4 +1,6 @@
-Tensorflow implementation of Drawing Classification
+#Tensorflow implementation of Drawing Classification
+
+This repo contains the TensorFlow code for sketch-rnn, the recurrent neural network model described in Teaching Machines to Draw and A Neural Representation of Sketch Drawings. We train our model on a dataset of hand-drawn sketches, each represented as a sequence of motor actions controlling a pen: which direction to move, when to lift the pen up, and when to stop drawing. You can use the jupyter notebook included to encode, decode, and morph between two vector images, and also generate new random ones.
 
 Steps for Delivarable 1 :
 
