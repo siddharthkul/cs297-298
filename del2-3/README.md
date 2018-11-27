@@ -1,6 +1,6 @@
-# Heading
+# UI Component Classification using Doodle Classifier
 
-Test ...
+DoodleClassifier is an openFrameworks application, part of the ml4a-ofx collection, which lets you train a classifier to accurately recognize drawings (doodles) from a camera.
 
 ## Sub Heading 2
 
