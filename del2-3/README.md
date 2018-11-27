@@ -1,13 +1,12 @@
 # UI Component Classification using Doodle Classifier
 
-DoodleClassifier is an openFrameworks application, part of the ml4a-ofx collection, which lets you train a classifier to accurately recognize drawings (doodles) from a camera.
+DoodleClassifier is an openFrameworks application, part of the ml4a-ofx collection, which lets you train a classifier to accurately recognize drawings (doodles) from a camera.
 
 ## Sub Heading 2
 
-1. Download [Quick Draw Dataset](https://quickdraw.withgoogle.com/data)
-2. Setup [Magenta Environment](https://github.com/tensorflow/magenta/blob/master/README.md)
-3. Download SketchRNN code from github: [Sketch-RNN: A Generative Model for Vector Drawings](https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn)
+1. Download and install [openFrameworks](https://openframeworks.cc/download/)
+2. Copy the source code provided below into the /apps folder and open on Xcode(MAC) or IDE of choice.
+3. Build program and openframeworks should automatically open app if no errors found.
 4. Replace sketch_rnn_train.py file with the sketch_rnn_train.py given in this repo. The changes made were rotating input dataset. 
-5. You can use [SketchRNN: load pre-trained models and draw things with sketch-rnn](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/Sketch_RNN.ipynb) to view the result of the model using jupyer notebook.
-6. Additionally, you use this model for the web by converting into a magenta-js readable format. [Sketch_RNN_TF_To_JS_Tutorial](https://github.com/tensorflow/magenta-demos/blob/master/jupyter-notebooks/Sketch_RNN_TF_To_JS_Tutorial.ipynb)
-7. Use json output of previous step in the magenta-js sketch rnn web application. [Magenta-js SketchRNN](https://github.com/tensorflow/magenta-js/tree/master/sketch)
+5. Train the model to learn user interface drawings of your choice.
+6. Use the threshold and dilation slider on the bototm left to make sure all edges are detected.
