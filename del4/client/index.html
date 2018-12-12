@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+        .center-screen{
+          position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 480px;
+    transform: translate(-50%, -50%);
+        }
+      </style>
+    </head>
+    <body>
+
+      <!-- <div class="container center-screen">
+        
+        Dummy content
+
+      </div> -->
+
+      <div class="container center-screen">
+        
+        <nav class="indigo"><div class="nav-wrapper"><a href="#" class="brand-logo center">Navbar</a></div></nav>
+        <div class="row"><div class="col s12"><div class="card"><div class="card-image"><img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"><span class="card-title">Card Title</span></div><div class="card-content"><p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p></div><div class="card-action"><a href="#">This is a link</a></div></div></div></div>
+
+      </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+ <!--      <script>
+        var socket = io('http://localhost:8000');
+        socket.on('connect', function(){
+          console.log('connected');
+          socket.on('event', function(data){});
+          socket.on('disconnect', function(){
+            console.log('disconnected');
+          });
+          socket.on('broadcast',function(data) {
+            console.log(data)
+            if(data.payload[0]=='beginClassification' 
+              //|| data.payload[0]=='endClassification'
+              ){
+              $('.container').empty();
+            }else{
+              if(data.payload.length == 5){
+                if(data.payload[0]=='top-nav' && !$("nav")[0]){
+                  console.log(data.payload)
+                  $('.container').append('<nav class="indigo"><div class="nav-wrapper"><a href="#" class="brand-logo center">Navbar</a></div></nav>');
+                  // $('.container').append('<nav style="position: absolute;left:'+data.payload[1]+'px;top:'+data.payload[2]+'px;width: '+data.payload[3]+'px;height: '+data.payload[4]+'"><div class="nav-wrapper"><a href="#" class="brand-logo">Navbar</a><ul id="nav-mobile" class="right hide-on-med-and-down"><li><a href="sass.html">Sass</a></li></ul></div></nav>');
+                }
+                if(data.payload[0]==' image-card' && !$(".card")[0]){
+                  console.log(data.payload)
+                  $('.container').append('<div class="row"><div class="col s12"><div class="card"><div class="card-image"><img src="https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"><span class="card-title">Card Title</span></div><div class="card-content"><p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p></div><div class="card-action"><a href="#">This is a link</a></div></div></div></div>');
+                }
+              }  
+            }
+        });
+        }); 
+      </script> -->
+    </body>
+  </html>
